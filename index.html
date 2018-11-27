@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Homepage </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body class= "myPage">
+        <div class= "container container-home">
+            <!--IUB Logo goes here-->
+            <p class= "homeheader">
+            <a href= "http://www.iub.edu.bd/"><img src="http://www.fhrc-bd.org/images/logo/logo_iub.png" width="150" height="150"></img></a>
+                Independent University Bangladesh 
+                <span></span>
+            </p>
+            
+            <div class="panel panel-default" style="margin-top: 40px;">
+                <div class="panel-body">
+                    <p class= "homeinfo"> 
+                        Founded in 1993, Independent University, Bangladesh is one of the oldest private universities in Bangladesh where academic excellence is a tradition, teaching a passion and lifelong learning a habit. IUB currently has more than 7,048 undergraduate and graduate students and over 10,455 alumni. The student population is projected to grow at 10% annually. The students of IUB experience an exciting academic life with copious opportunity to explore and nurture their innate talent.
+                    </p>
+            
+                    <button class="loginbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto; align:center; background-color: #581845">Login</button>
+            
+                </div>
+            </div>
+        </div>
+        
+        <!--Login form-->
+        <div class= "container container-home">
+            <!--Second part which handles the styling of the account creation section-->
+            <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+                
+                <div class="container container-login">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" size="4" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                  <label for="group"><b>Group</b></label>
+                  <select>
+                      <option label="Student">Student</option>
+                      <option label="Faculty">Faculty</option>
+                      <option label="Admin">Admin</option>
+                    </select>
+                    
+                  <button class="loginbtn" type="submit" onclick="redirectPage()'" style="background-color: #581845">Login</button></a>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container container-login" id="container-forgotpsw" style="background-color:#f1f1f1">
+                  Forgot <a href="https://web-project-amirahkabir.c9users.io/pages/recovery/recover.html">password?</a>
+                </div>
+              </form>
+            </div>
+            
+            <br><br><br>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p style="font-weight: bold;font-size:15px;">
+                        New to IUB?
+                    </p>
+                    <p>
+                        Create your IUB student account, which will serve as your digital assitant to keep track of course information, events, and activites.
+                    </p>
+                    
+                    <a href="https://web-project-amirahkabir.c9users.io/pages/signup-page/sign-up.html"> <button class="loginbtn" style="background-color: #581845"> Create Account </button></a>
+                    
+                    <!--Little section at the bottom which handles password retrieval-->
+                    <p style="font-weight: bold; font-size: 15px; margin-top: 15px">
+                        Have issues that need help?
+                    </p>
+                    <p>
+                        Forgot your password? <br><span> That's OK, we are here to help! <br>To recover your password, visit the <a href= "https://web-project-amirahkabir.c9users.io/pages/recovery/recover.html">Forgot Password</a> page.</span>
+                        <br><br>
+                        IUB account holders: <br><span> If you need assistance with account management, please visit the IUB Help Request Portal. </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+          <!--<a class="up-arrow" href="#">-->
+          <!--  <span class="glyphicon glyphicon-chevron-up"></span>-->
+          <!--</a><br><br>-->
+          <p style= "float:left">
+            <span class= "glyphicon glyphicon-copyright-mark"></span> Independent University, Bangladesh
+            <br><br>
+            <span class= "glyphicon glyphicon-home"></span> Plot 16 Block B, Aftabuddin Ahmed Road
+            <br>Bashundhara R/A, Dhaka, Bangladesh
+          </p>
+          <p style= "float:right">
+            <span class= "glyphicon glyphicon-phone"></span> Phone:+88-02-8431645-53, 8432065-76
+            <br><span class= "glyphicon glyphicon-earphone"></span> Hotline:+880 9612-939393
+            <br><span class= "glyphicon glyphicon-briefcase"></span> Fax: +88-02-8431991
+            <br><span class= "glyphicon glyphicon-envelope"></span> E-mail: info@iub.edu.bd
+          </p>
+          <div style="clear: both"></div>
+        </footer>
+        
+      
+        <script src= "jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+    
+</html>

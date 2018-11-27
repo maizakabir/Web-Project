@@ -1,0 +1,64 @@
+body, html{
+    font-family: sans-serif;
+    color: black;
+    height: 100%;
+}
+
+body{
+    /*background-image: url("http://www.eee.iub.edu.bd/images/iub_campus.png");*/
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+img
+{
+    margin: auto;
+}
+
+.recoveryheader
+{
+    font-size: 25px;
+    text-align: left;
+    color: white;
+}
+
+.recoveryinfo{
+    font-size: 15px;
+}
+
+#recoveryheading{
+    background-color: #76323F !important;
+    height: 100px;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+#recoveryform{
+    width: 500px;
+    margin-top: 70px;
+}
+
+/*footer*/
+footer{
+    background-color: #2d2d30;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    position: absolute;
+}
+
+
+footer a {
+    color: white;
+}
+
+.address{
+    float: left;
+}
+
+.numbers{
+    float: right;
+}
